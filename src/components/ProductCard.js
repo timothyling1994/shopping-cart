@@ -7,7 +7,7 @@ function ProductCard(props) {
   return (
     <div className="productCard">
       <Link to={`/store/${props.imgName}`}><img className="sample-packs" src={`/assets/${props.imgName}.jpg`}></img></Link>
-      <div className="productName">{props.productName}</div>
+      <div className="productName">{(props.productName).toUpperCase()}</div>
       <div className="price">${props.productPrice}</div>
     </div>
   );

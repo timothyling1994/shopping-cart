@@ -7,8 +7,7 @@ import ProductCard from "./ProductCard.js";
 
 function Store(props) {
 
-
-  const [items,setItems] = useState(productList.productList);
+  const allProductsObj = props.getAllProductItems();
 
   return (
     <div className="store">
@@ -16,9 +15,9 @@ function Store(props) {
       <div className="main-store-container">
       	<div className="categories">ALL PRODUCTS</div>
         <div className="product-list">
-        {items.map((item)=>{
-          return <ProductCard key={item[0]} productName={item[1]} imgName={item[2]} productPrice={item[3]}/>
-        })}
+          {Object.keys(allProductsObj).map((key)=>{
+            return <ProductCard key={allProductsObj[key].id} productName={key} imgName={allProductsObj[key].samplePackNum} productPrice={allProductsObj[key].samplePackPrice}/>
+          })}
         </div>
       </div>
     </div>

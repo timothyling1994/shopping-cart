@@ -9,7 +9,7 @@ function NavBar(props) {
 		let totalItems = 0;
 	    for (let prop in cartItemObj)
 	    {
-	      totalItems += cartItemObj[prop];
+	      totalItems += cartItemObj[prop].quantity;
 	    }
 	    return totalItems;
 	};

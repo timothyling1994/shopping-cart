@@ -200,8 +200,40 @@ html,body{
 .main-cart-container{
   display:flex;
   justify-content: center;
+  align-content: flex-start;
   flex-wrap:wrap;
   width:100%;
   height:90%;
-  background-color: green;
+}
+
+.checkOut{
+  width:100%;
+  padding:0.5em;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:0.5em;
+  font-size:35px;
+  text-align:center;
+}
+
+.checkOutProductCards{
+  height:20vw;
+  width:17vw;
+}
+.checkout-sample-packs{
+  width:15vw;
+  height:15vw;
+}
+.subTotal{
+  width:100%;
+  padding:1.5em;
+  text-align:center;
+}
+.proceedToPayment{
+  padding:1em;
+  border:solid black 3px;
+  font-size:25px;
+}
+.proceedToPayment:hover{
+  background-color: #a3a3c2;
 }

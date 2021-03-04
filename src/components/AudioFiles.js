@@ -2,7 +2,8 @@ import React,{useState} from "react";
 import ReactAudioPlayer from 'react-audio-player';
 
 
-function ListAudioFiles(props) {
+
+function AudioFiles(props) {
 
   return (
     <div className="audio-files">
@@ -15,4 +16,4 @@ function ListAudioFiles(props) {
   );
 }
 
-export default ListAudioFiles;
+export default AudioFiles;

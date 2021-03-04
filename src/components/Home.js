@@ -3,10 +3,10 @@ import NavBar from "./NavBar.js";
 import { Link } from "react-router-dom";
 
 //<img src={drum_broker_img}></img>
-function Home() {
+function Home(props) {
   return (
     <div className="home">
-      <NavBar/>
+      <NavBar getCartItems={props.getCartItems}/>
       <div className="main-container">
       	<div className="main-content">
       		<div className="main-img">

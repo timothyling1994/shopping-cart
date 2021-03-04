@@ -5,14 +5,14 @@ import productList from "../productList.js";
 import ProductCard from "./ProductCard.js";
 
 
-function Store() {
+function Store(props) {
 
 
   const [items,setItems] = useState(productList.productList);
 
   return (
     <div className="store">
-      <NavBar/>
+      <NavBar getCartItems={props.getCartItems}/>
       <div className="main-store-container">
       	<div className="categories">ALL PRODUCTS</div>
         <div className="product-list">

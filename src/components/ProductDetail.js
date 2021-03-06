@@ -37,20 +37,35 @@ function ProductDetail(props) {
 		);
 	};
 
+	const productDetailStyle = {
+		//backgroundImage: `url(/assets/${samplePackNum}.jpg)`,
+		width:'50vw',
+		height:'33vw',
+		backgroundRepeat: 'no-repeat',
+		backgroundPosition: 'center',
+		backgroundImage: `linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(/assets/${samplePackNum}.jpg)`,
+	};
+
+//<div className="button-row"><Link to="/store" className="go-back">GO BACK</Link></div>
+//<img className="productItemPic" src={`/assets/${samplePackNum}.jpg`}></img>
   return (
     <div className="productDetail">
     	<NavBar getCartItems={props.getCartItems}/>
     	<div className="product-item-container">
     		<div className="sample-pack-name">{samplePackName.toUpperCase()}</div>
-    		<img className="productItemPic" src={`/assets/${samplePackNum}.jpg`}></img>
-    		<div className="audio-files-container">
-	    		{audiofiles.map((file)=>{
-	    			return <AudioFiles key={uniqid()} samplePackNum={samplePackNum}file_name={file}/>
-	    		})}
+    		<div className="background-image-container" style={productDetailStyle}>
+	    		<div className="audio-files-container">
+		    		{audiofiles.map((file)=>{
+		    			return <AudioFiles key={uniqid()} samplePackNum={samplePackNum}file_name={file}/>
+		    		})}
+		    	</div>
 	    	</div>
 	    	<div className="button-container">
-		    	<div className="button-row"><div className="add-to-cart" onClick={addToCart}>ADD TO CART</div></div>
-		    	<div className="button-row"><Link to="/store" className="go-back">GO BACK</Link></div>
+		    	<div className="button-row">
+		    		<div className="add-to-cart" onClick={addToCart}>ADD TO CART</div>
+		    		<Link to="/store" className="back">BACK</Link>
+		    	</div>
+		
 		    </div>
     	</div>
     </div>

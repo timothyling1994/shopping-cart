@@ -2,12 +2,11 @@ import uniqid from "uniqid";
 
 const productList = 
 {
-	"Eternal Combat Kit":{
+	"Kount's No Time Sample Pack":{
 		id:uniqid(),
 		samplePackNum:"sample-pack-1",
-		samplePackPrice:19.99,
+		samplePackPrice:14.99,
 	},
-
 
 	"Kount Samples Vol 1.":{
 		id:uniqid(),
@@ -70,10 +69,10 @@ const productList =
 		samplePackPrice:14.99,
 	},
 
-	"Kount's No Time Sample Pack":{
+	"Eternal Combat Kit":{
 		id:uniqid(),
 		samplePackNum:"sample-pack-12",
-		samplePackPrice:14.99,
+		samplePackPrice:19.99,
 	},
 
 };

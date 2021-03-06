@@ -162,11 +162,46 @@ html,body{
 .sample-pack-name{
   width:100%;
   text-align:center;
-  font-size:40px;
+  font-size:35px;
+  margin-bottom:0.25em;
+
+}
+.background-image-container{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
 }
 .audio-files-container{
-  padding-left:2em;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(255,255,255,0.6);
+  padding:1em;
+
 }
+.audio-files{
+  display:flex;
+  justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
+  width:100%;
+}
+.file-name{
+  width:100%;
+  text-align:center;
+  font-size:23px;
+  color: black;
+}
+.ReactAudioPlayer{
+  width:80%;
+  outline:none;
+}
+
 .button-container{
   width:100%;
 }
@@ -176,24 +211,25 @@ html,body{
 }
 .add-to-cart{
   display:inline-block;
-  font-size: 30px;
+  font-size: 25px;
   padding: 0.5em;
   border:solid black 3px;
-  margin-bottom:0.5em;
+  margin-right:0.5em;
 }
 .add-to-cart:hover{
   background-color: #a3a3c2;
 }
 
-.go-back{
+.back{
   display:inline-block;
   font-size: 25px;
   padding: 0.5em;
   border:solid black 3px;
   text-decoration: none;
   color:black;
+  margin-left:0.5em;
 }
-.go-back:hover{
+.back:hover{
   background-color: #a3a3c2;
 }
 
@@ -228,6 +264,26 @@ html,body{
   width:100%;
   padding:1.5em;
   text-align:center;
+}
+.quantity-toggle{
+  width:100%;
+}
+
+.decrement,.increment{
+  display:inline;
+  float:center;
+  font-size:20px;
+  border:solid black 1px;
+  padding:0.1em;
+  margin-top:0.1em;
+  background-color: lightgrey;
+}
+
+.decrement{
+  margin-right:0.5em;
+}
+.increment{
+   margin-left:0.5em;
 }
 .proceedToPayment{
   padding:1em;

@@ -11,6 +11,7 @@ function AudioFiles(props) {
           <ReactAudioPlayer
           src={`/assets/${props.samplePackNum}/${props.file_name}`}
           controls
+          className="ReactAudioPlayer"
         />
       </div>
   );
